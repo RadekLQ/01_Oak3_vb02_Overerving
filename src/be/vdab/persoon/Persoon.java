@@ -1,15 +1,16 @@
-package be.vdab.overerving;
+package be.vdab.persoon;
 
 public class Persoon {
 
-    private String naam, voornaam;
-    private be.vdab.overerving.Adres adres;
+    private String naam;
+    private String voornaam;
+    private be.vdab.persoon.Adres adres;
 
     public Persoon(String naam, String voornaam, String straat, String nummer, int postcode, String gemeente) {
-        this(naam, voornaam, new be.vdab.overerving.Adres(straat, nummer, gemeente, postcode));
+        this(naam, voornaam, new be.vdab.persoon.Adres(straat, nummer, gemeente, postcode));
     }
 
-    public Persoon(String naam, String voornaam, be.vdab.overerving.Adres adres) {
+    public Persoon(String naam, String voornaam, be.vdab.persoon.Adres adres) {
         this.naam = naam;
         this.voornaam = voornaam;
         this.adres = adres;
@@ -31,11 +32,11 @@ public class Persoon {
         this.voornaam = voornaam;
     }
 
-    public be.vdab.overerving.Adres getAdres() {
+    public be.vdab.persoon.Adres getAdres() {
         return adres;
     }
 
-    public void setAdres(be.vdab.overerving.Adres adres) {
+    public void setAdres(be.vdab.persoon.Adres adres) {
         this.adres = adres;
     }
 
